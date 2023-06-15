@@ -60,7 +60,7 @@ def main():
    X_scaled = scaler.fit_transform(X)
 
    # Memisahkan data menjadi data pelatihan dan data pengujian
-   X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, train_size=0.7, test_size=0.3, shuffle=False)
+   X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, train_size=0.8, test_size=0.2, shuffle=False)
 
    # Membangun model regresi linear
    model = LinearRegression()
