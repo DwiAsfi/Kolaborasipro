@@ -40,7 +40,7 @@ def preprocess_data(data):
 
 # Fungsi utama aplikasi Streamlit
 def main():
-   st.title("Prediksi Sale Volume")
+   st.title("Prediksi Volume")
 
    # Membaca dataset dari file CSV
    df = pd.read_csv('mandiri.csv')
@@ -120,7 +120,7 @@ def main():
 
    with tabs[3]:
       st.subheader('Implementasi')
-      st.write("Masukkan tanggal untuk memprediksi Sale Volume:")
+      st.write("Masukkan tanggal untuk memprediksi Volume:")
       input_date = st.date_input("Tanggal")
          
          # Mengubah kolom "Date" menjadi tipe data datetime jika belum
@@ -143,7 +143,7 @@ def main():
          # Memprediksi Sale Volume
       predicted_value = model.predict(input_index_scaled)
          
-      st.write("Prediksi Sale Volume:", predicted_value[0])
+      st.write("Prediksi Volume:", predicted_value[0])
 # Menjalankan aplikasi Streamlit
 if __name__ == "__main__":
    main()
