@@ -87,6 +87,7 @@ def main():
       st.subheader('Tentang Dataset')
       st.write ("""
       Dataset yang digunakan adalah data time series pada Saham PT. Bank Mandiri(Persero), datanya di dapatkan dari website pada link berikut ini.
+      https://finance.yahoo.com/quote/BMRI.JK/history?p=BMRI.JK
       """)
       st.write ("""
          Dataset yang digunakan berjumlah 247 data dan terdapat 7 atribut : 
